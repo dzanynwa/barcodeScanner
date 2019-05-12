@@ -1,14 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="header">
+        BARCODE SCANNER
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+    <div class="textfields">
+        <div class="barcode" (click)="scanBarcode()">
+          <h3>Press the icon to scan your BARCODE!</h3>
+          <img class="img" src="../../assets/barcode.png" />
+        </div>
+  
+        <ion-item class="separator">
+        <ion-input type="text" placeholder="Barcode" [(ngModel)]="scannedData"></ion-input>
+        </ion-item>
+
+        <button class = "btn" ion-button full (click)="pretraga()">
+            SEARCH
+        </button>
+    </div>
+  
+    <div class="spinner-bgr" *ngIf="loading">
+      <ion-spinner class="spinner" name="bubbles"></ion-spinner>
+    </div>
+    
 </ion-content>

@@ -1,1 +1,73 @@
+  *{
+    font-family: 'PT Sans', sans-serif;
+  }
 
+  .header{
+    background-color: #5DB7DE;
+    font-size: 24px;
+    color: #F1E9DB;
+
+  }
+  .ikona{
+    font-size: 40px;
+    color: #F1E9DB;
+    margin-top: 3px;
+    float:right;
+    margin-right: 10%;
+  }
+   h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 30px;
+    white-space: normal;
+  }
+  .img {
+    width: 35%;
+    height: auto;
+    margin: 0;
+  }
+  .barcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .barcode > h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .textfields {
+    height: 100%;
+    clear: both;
+  }
+  .btn {
+      padding: 10px 60px;
+      background-color: #5DB7DE;
+      color: #F1E9DB;
+      border-radius: 15px;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 30%;
+  }
+  .spinner-bgr {
+    background: white;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    color: white;
+  }
