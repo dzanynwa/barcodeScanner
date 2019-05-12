@@ -8,25 +8,24 @@ import { BarcodeScannerOptions, BarcodeScanner } from "@ionic-native/barcode-sca
 })
 export class HomePage {
   scannedData: {};
+  barcode: string; 
   barcodeScannerOptions: BarcodeScannerOptions;
  
   constructor(private barcodeScanner: BarcodeScanner) {
 
+    this.barcode = "";
     this.barcodeScannerOptions = {
       showTorchButton: true,
       showFlipCameraButton: true
     };
   }
 
-  scanBarcode() {
-    this.barcodeScanner
-      .scan()
-      .then(barcodeData => {
-        alert("Barcode data " + JSON.stringify(barcodeData));
-        this.scannedData = barcodeData;
-      })
-      .catch(err => {
-        console.log("Error", err);
-      });
+  async scanBarcode() {
+    this.barcodeScanner.scan().then(barcodeData => {
+      this.scannedData = barcodeData
+      this.barcode = barcodeData.text
+    }).catch(err => {
+      console.log(err);
+    });
   }
 }

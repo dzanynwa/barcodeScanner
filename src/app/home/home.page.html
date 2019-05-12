@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class="header">
+  <ion-toolbar class="header">
     <ion-title class="header">
         BARCODE SCANNER
     </ion-title>
@@ -7,23 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-    <div class="textfields">
         <div class="barcode" (click)="scanBarcode()">
           <h3>Press the icon to scan your BARCODE!</h3>
           <img class="img" src="../../assets/barcode.png" />
         </div>
   
         <ion-item class="separator">
-        <ion-input type="text" placeholder="Barcode" [(ngModel)]="scannedData"></ion-input>
+          <ion-input type="text" placeholder="Barcode" [(ngModel)]="barcode"></ion-input>
         </ion-item>
 
-        <button class = "btn" ion-button full (click)="pretraga()">
+        <div style="clear:both"></div>
+
+        <button ion-button text-center class = "btn">
             SEARCH
         </button>
-    </div>
-  
-    <div class="spinner-bgr" *ngIf="loading">
+    <!-- <div class="spinner-bgr" *ngIf="loading">
       <ion-spinner class="spinner" name="bubbles"></ion-spinner>
-    </div>
+    </div> -->
     
 </ion-content>

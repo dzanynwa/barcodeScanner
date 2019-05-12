@@ -3,9 +3,8 @@
   }
 
   .header{
-    background-color: #5DB7DE;
-    font-size: 24px;
-    color: #F1E9DB;
+    background-color: #FF312E;
+    color: #ffffff;
 
   }
   .ikona{
@@ -15,15 +14,7 @@
     float:right;
     margin-right: 10%;
   }
-   h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #ffcc00;
-    font-weight: bold;
-    font-size: 30px;
-    white-space: normal;
-  }
+   
   .img {
     width: 35%;
     height: auto;
@@ -47,14 +38,25 @@
     height: 100%;
     clear: both;
   }
+  ion-content {
+    --overflow: hidden;
+}
   .btn {
-      padding: 10px 60px;
-      background-color: #5DB7DE;
-      color: #F1E9DB;
-      border-radius: 15px;
+      padding: 10px;
+      margin: 0;
+      background-color: #ffffff;
+      color: #FF312E;
+      border-radius: 10px;
+      border: 1px solid #FF312E;
       font-size: 20px;
+      position: fixed;
+      left: 0;
+      bottom: 20px;
+      right: 0;
+      width: 70%;
+      text-decoration: none;
       text-align: center;
-      margin-top: 30%;
+      margin-left:15%;
   }
   .spinner-bgr {
     background: white;
