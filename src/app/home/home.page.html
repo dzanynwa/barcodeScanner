@@ -16,9 +16,7 @@
           <ion-input type="text" placeholder="Barcode" [(ngModel)]="barcode"></ion-input>
         </ion-item>
 
-        <div style="clear:both"></div>
-
-        <button ion-button text-center class = "btn">
+        <button ion-button text-center class = "btn" (click)="scanBarcode()">
             SEARCH
         </button>
     <!-- <div class="spinner-bgr" *ngIf="loading">

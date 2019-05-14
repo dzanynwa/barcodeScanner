@@ -22,10 +22,12 @@ export class HomePage {
 
   async scanBarcode() {
     this.barcodeScanner.scan().then(barcodeData => {
-      this.scannedData = barcodeData
-      this.barcode = barcodeData.text
+      this.scannedData = barcodeData;
+      this.barcode = barcodeData.text;
     }).catch(err => {
-      console.log(err);
+      alert(err);
     });
   }
+
+  
 }
